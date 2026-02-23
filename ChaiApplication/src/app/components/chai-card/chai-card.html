@@ -1,0 +1,17 @@
+<div class="chai-card" *ngIf="chai">
+  <div class="card-image">
+    <img [src]="chai.image" [alt]="chai.name" />
+  </div>
+  <div class="card-content">
+    <h2>{{ chai.name }}</h2>
+    <p class="description">{{ chai.description }}</p>
+    <div class="rating">
+      <span *ngFor="let star of getRatingArray()" class="star">★</span>
+      <span class="rating-value">{{ chai.rating }}/5</span>
+    </div>
+    <div class="footer">
+      <span class="price">${{ chai.price }}</span>
+      <button (click)="addToCart()" class="btn">Add to Cart</button>
+    </div>
+  </div>
+</div>

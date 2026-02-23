@@ -1,0 +1,20 @@
+.chai-list-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #f5e6d3 0%, #e8d4c0 100%);
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #5c3d2e;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.chai-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,135 @@
+.order-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #5c3d2e;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #5c3d2e;
+  border-bottom: 2px solid #8b5a3c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.order-summary {
+  margin-bottom: 30px;
+}
+
+.order-items {
+  background: #f9f6f3;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  gap: 15px;
+}
+
+.item-name {
+  flex: 1;
+  font-weight: bold;
+  color: #5c3d2e;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #d9534f;
+  min-width: 80px;
+  text-align: right;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.total {
+  text-align: right;
+  font-size: 1.3em;
+  color: #5c3d2e;
+  padding: 15px;
+  border-top: 2px solid #ddd;
+}
+
+.customer-info {
+  background: #f9f6f3;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #5c3d2e;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8b5a3c;
+  box-shadow: 0 0 5px rgba(139, 90, 60, 0.3);
+}
+
+.order-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #8b5a3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #6d4430;
+}

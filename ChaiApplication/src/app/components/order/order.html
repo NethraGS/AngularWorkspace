@@ -1,0 +1,61 @@
+<div class="order-container">
+  <h1>Your Order</h1>
+  
+  <div class="order-summary">
+    <h2>Order Items</h2>
+    <div class="order-items">
+      <div class="order-item" *ngFor="let item of orderItems">
+        <span class="item-name">{{ item.name }}</span>
+        <input 
+          type="number" 
+          [(ngModel)]="item.quantity" 
+          (change)="updateQuantity(item.id, item.quantity)"
+          min="1"
+          class="quantity-input"
+        />
+        <span class="item-price">${{ (item.price * item.quantity).toFixed(2) }}</span>
+        <button (click)="removeItem(item.id)" class="remove-btn">Remove</button>
+      </div>
+    </div>
+    <div class="total">
+      <strong>Total: ${{ getTotalPrice().toFixed(2) }}</strong>
+    </div>
+  </div>
+
+  <div class="customer-info">
+    <h2>Delivery Information</h2>
+    <div class="form-group">
+      <label>Name:</label>
+      <input 
+        type="text" 
+        [(ngModel)]="customerName" 
+        placeholder="Enter your name"
+      />
+    </div>
+    <div class="form-group">
+      <label>Email:</label>
+      <input 
+        type="email" 
+        [(ngModel)]="customerEmail" 
+        placeholder="Enter your email"
+      />
+    </div>
+    <div class="form-group">
+      <label>Phone:</label>
+      <input 
+        type="tel" 
+        [(ngModel)]="phoneNumber" 
+        placeholder="Enter your phone"
+      />
+    </div>
+    <div class="form-group">
+      <label>Delivery Address:</label>
+      <textarea 
+        [(ngModel)]="deliveryAddress" 
+        placeholder="Enter your delivery address"
+        rows="3"
+      ></textarea>
+    </div>
+    <button (click)="placeOrder()" class="order-btn">Place Order</button>
+  </div>
+</div>

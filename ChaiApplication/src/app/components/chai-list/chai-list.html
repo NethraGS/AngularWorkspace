@@ -1,0 +1,10 @@
+<div class="chai-list-container">
+  <h1>Chai Shop - Our Collections</h1>
+  <div class="chai-grid">
+    <app-chai-card 
+      *ngFor="let chai of chaiProducts"
+      [chai]="chai"
+      (selectProduct)="selectProduct($event)">
+    </app-chai-card>
+  </div>
+</div>
