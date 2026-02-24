@@ -1,0 +1,40 @@
+header.app-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 12px 20px;
+	background: #fff;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.tabs {
+	display: flex;
+	gap: 12px;
+}
+
+.tabs a {
+	text-decoration: none;
+	padding: 8px 14px;
+	border-radius: 6px;
+	color: #2c3e50;
+	font-weight: 600;
+	background: transparent;
+	border: 1px solid transparent;
+	transition: all 0.15s ease-in-out;
+}
+
+.tabs a:hover {
+	background: #f5f7fa;
+}
+
+.tabs a.active {
+	background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+	color: white;
+	border-color: rgba(0,0,0,0.06);
+}
+
+.app-main {
+	padding: 20px;
+}
+

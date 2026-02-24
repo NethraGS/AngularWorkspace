@@ -1,1 +1,12 @@
-<h1>Hello World</h1>
+
+<header class="app-header">
+	<app-red></app-red>
+	<nav class="tabs">
+		<a routerLink="/catalog" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">View Books</a>
+		<a routerLink="/add-book" routerLinkActive="active">Add Book</a>
+	</nav>
+</header>
+
+<main class="app-main">
+	<router-outlet></router-outlet>
+</main>
